@@ -1,1 +1,1 @@
-worker: tail -f /dev/null
+worker: python scheduler.py
