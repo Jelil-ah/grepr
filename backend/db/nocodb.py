@@ -3,7 +3,7 @@ NocoDB Client - Push posts to NocoDB database
 """
 import json
 import requests
-from config import NOCODB_BASE_URL, NOCODB_API_TOKEN, NOCODB_TABLE_ID
+from backend.config import NOCODB_BASE_URL, NOCODB_API_TOKEN, NOCODB_TABLE_ID
 
 
 def get_headers():

@@ -5,7 +5,7 @@ import requests
 import time
 from datetime import datetime
 from typing import Generator
-from config import SUBREDDITS, MIN_SCORE, POSTS_PER_REQUEST, TIME_FILTER, USER_AGENT
+from backend.config import SUBREDDITS, MIN_SCORE, POSTS_PER_REQUEST, TIME_FILTER, USER_AGENT
 
 
 def fetch_subreddit_posts(subreddit: str, time_filter: str = TIME_FILTER, limit: int = POSTS_PER_REQUEST) -> Generator[dict, None, None]:

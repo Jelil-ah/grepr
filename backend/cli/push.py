@@ -11,8 +11,8 @@ import json
 import argparse
 from datetime import datetime
 from pathlib import Path
-from nocodb_client import push_post, get_existing_post_ids
-from config import logger
+from backend.db.nocodb import push_post, get_existing_post_ids
+from backend.config import logger
 
 # Configuration
 DATA_DIR = Path(__file__).parent / "data"

@@ -23,7 +23,25 @@ def validate_subreddit_name(name: str) -> bool:
 
 
 # Reddit settings - validate subreddit names
-_raw_subreddits = ["vosfinances", "vossous"]
+_raw_subreddits = [
+    # Francophone
+    "vosfinances",
+    "vossous",
+    # Europe
+    "eupersonalfinance",
+    "ETFs_Europe",
+    "UKPersonalFinance",
+    # Anglophone - ETF/Investing
+    "Bogleheads",
+    "ETFs",
+    "investing",
+    "portfolios",
+    # Anglophone - Personal Finance
+    "personalfinance",
+    "financialindependence",
+    "Fire",
+    "dividends",
+]
 SUBREDDITS = [s for s in _raw_subreddits if validate_subreddit_name(s)]
 if len(SUBREDDITS) != len(_raw_subreddits):
     invalid = [s for s in _raw_subreddits if not validate_subreddit_name(s)]

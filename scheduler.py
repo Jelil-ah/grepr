@@ -7,10 +7,10 @@ import os
 import time
 from datetime import datetime, timedelta
 from pathlib import Path
-from reddit_fetcher import fetch_subreddit_posts, fetch_top_comment
-from ai_processor import process_posts
-from nocodb_client import push_posts, get_existing_post_ids
-from config import SUBREDDITS, logger
+from backend.fetchers.reddit import fetch_subreddit_posts, fetch_top_comment
+from backend.processors.ai import process_posts
+from backend.db.nocodb import push_posts, get_existing_post_ids
+from backend.config import SUBREDDITS, logger
 
 # Configuration
 POSTS_PER_DAY_PER_SUBREDDIT = 500  # Max posts per subreddit per day

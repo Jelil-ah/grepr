@@ -12,9 +12,9 @@ import time
 import argparse
 from datetime import datetime
 from pathlib import Path
-from reddit_fetcher import fetch_subreddit_posts, fetch_top_comment
-from nocodb_client import get_existing_post_ids
-from config import SUBREDDITS, logger
+from backend.fetchers.reddit import fetch_subreddit_posts, fetch_top_comment
+from backend.db.nocodb import get_existing_post_ids
+from backend.config import SUBREDDITS, logger
 
 # Configuration
 OUTPUT_DIR = Path(__file__).parent / "data"
