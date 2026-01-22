@@ -12,8 +12,8 @@ import time
 import argparse
 from datetime import datetime
 from pathlib import Path
-from ai_processor import categorize_and_summarize, extract_financial_data
-from config import logger
+from backend.processors.ai import categorize_and_summarize, extract_financial_data
+from backend.config import logger
 
 # Configuration
 DATA_DIR = Path(__file__).parent / "data"

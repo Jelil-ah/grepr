@@ -1,12 +1,12 @@
 """
-AI Processor for Grepr - Categorize and summarize posts using Groq or DeepSeek API
+AI processing - categorizes and summarizes posts with Groq or DeepSeek
 """
 import json
 import re
 import time
 from openai import OpenAI
 from groq import Groq
-from config import (
+from backend.config import (
     AI_PROVIDER,
     GROQ_API_KEY, GROQ_MODEL,
     DEEPSEEK_API_KEY, DEEPSEEK_MODEL, DEEPSEEK_BASE_URL,
